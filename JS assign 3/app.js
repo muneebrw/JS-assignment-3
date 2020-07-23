@@ -236,3 +236,131 @@
 //     a.innerHTML = inc
 // }
 
+// ============ chap 49-52 ==============
+
+// // task 1
+
+// function subm()
+// {
+//     var a = document.getElementsByClassName('input')
+//     for (var i = 0; i < a.length; i++)
+//     {
+//         var b = a[i].value
+//         document.write("<br>" + b)
+//     }
+    
+// }
+
+// // task 2
+
+// function more(x)
+// {
+//     var p = document.getElementById(x)
+//     p.innerHTML = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, eligendi! Repellendus quisq Lorem ipsum dolorsit amet consectetur adipisicing elit. Vitae corrupti minima consequuntur reiciendis ducimus eius quia unde, quae facilis totam perferendis quibusdam, sapiente commodi nisi et beatae suscipit nulla id"
+// }
+
+// task 3
+
+// function sub()
+// {
+//      tbl = document.createElement('table')
+//      row = document.createElement('tr')
+//      data = document.createElement('td')
+
+//      labl = document.getElementById('frm').getElementsByTagName('tr').getElementsByTagName('td').getElementsByTagName('label')
+//      val = document.getElementById('frm').getElementsByTagName('tr').getElementsByTagName('td').getElementsByTagName('input')
+    
+//     for(i=0; i<labl.length; i++)
+//     {
+//         // var elem = document.getElementById('frm').elements
+//         document.body.style.backgroundColor='green'
+//         document.tbl.style.backgroundColor='red'
+//         document.row.style.backgroundColor='blue'
+//         document.data.style.backgroundColor='green'
+//         document.getElementById('sec2').appendChild(tbl)
+//         tbl.appendChild(row)
+//         row.appendChild(data)
+//         data.appendChild(labl[i].innerHTML)
+//         row.appendChild(data)
+//         data.appendChild(val[i].value)
+//     }
+// }
+
+// function sub()
+// {
+//     var table = document.createElement('table')
+//     var row = document.createElement('tr')
+//     var data = document.createElement('td')
+
+//     var label = document.getElementById('frm').getElementsByTagName('p')
+//     var value = document.getElementById('frm').getElementsByTagName('input')
+
+//     var sec = document.getElementById('sec2')
+//     sec.appendChild(table)
+    
+//     sec.style.backgroundColor = 'red'
+
+//     for(i = 0; i < label.length; i++)
+//     {
+//         table.appendChild(row)
+
+//         row.appendChild(data)
+//         lbl = label[i].innerText
+//         data.innerText = lbl
+
+//         row.appendChild(data)
+//         val = value[i].value
+//         data.innerText = val
+        
+//     }
+// }
+
+// ========== chap 58-67 ============
+
+// // task 1
+
+// var c = document.getElementById('main-content')
+// var p = c.getElementsByTagName('p')
+// for(i=0; i < p.length; i++)
+// {
+//     document.write('<br>' + p[i])
+// }
+
+// var r = c.getElementsByClassName('render')
+// for(i=0; i < r.length; i++)
+// {
+//     document.write('<br>' + r[i].innerHTML)
+// }
+
+// var frmCntnt = document.getElementById('form-content')
+
+// var fName = frmCntnt.getElementById('first-name')
+// fName.value = 'muneeb'
+// var lName = frmCntnt.getElementById('last-name')
+// lName.value = 'raza'
+// var mail = frmCntnt.getElementById('email')
+// mail.value = 'razamuneeb902@gmail.com'
+
+// // task 2
+
+// var frmCntnt = document.getElementById('form-content')
+// document.write(frmCntnt.nodeType)
+
+// var mainCntnt = document.getElementById('main-content')
+// var lName = mainCntnt.getElementById('lastName')
+// document.write(lName.nodeType + lName.childNodes[0])
+
+// var p2 = lName.createElement('p')
+
+// var fChild = mainCntnt.firstChild
+// var lChild = mainCntnt.lastChild
+
+// var mainCntnt = document.getElementById('main-content')
+// var lName = mainCntnt.getElementById('lastName')
+// var pSib = lName.previousSibling
+// var nSib = lName.nextSibling
+
+// var email = frmCntnt.getElementById('email')
+// var pNode = email.parentNode
+// var type = email.nodeType
+// console.log(type)
